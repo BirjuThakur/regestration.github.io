@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    {{>header}}
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center align-items-center order-2"
+                data-aos="fade-up">
+                <form action="/register" method="post" onsubmit="validation()"> <!-- -->
+                    <input type="text" name="fname" id="fname" placeholder="firstname" required >
+                    <span id="firsterror"></span><br><br>
+                    <input type="text" name="lname" id="lname" placeholder="lastname" required>
+                    <span id="lasterror"></span><br><br>
+                    <input type="text" name="email" id="email" placeholder="email" required>
+                    <span id="emailerror"></span><br><br>
+                    <input type="radio" name="gender" id="male" required>male
+                    <input type="radio" name="gender" id="female" required>female <br><br>
+                    <input type="number" name="age" id="age" placeholder="age" required>
+                    <span id="ageerror"></span><br><br>
+                    <input type="number" name="phoneno" id="phoneno" placeholder="phoneno" required>
+                    <span id="phoneerror"></span><br><br>
+                    <input type="password" name="pass" id="pass" placeholder="passward" required>
+                    <span id="passerror"></span><br><br>
+                    <input type="password" name="confirmpass" id="cpass" placeholder="confirm passward" required>
+                    <span id="cpasserror"></span><br><br>
+                    <input type="submit" value="submit" class="btn btn-success">
+                </form>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 order-1" data-aos="fade-down">
+                <figure>
+                    <img src="./images/register1.png" alt="login" class="img-fluid registerimage">
+                </figure>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="js/validation.js"></script>
+    <!--aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('input').keypress(function () {
+                $(this).css({
+                    'backgroundColor': 'black',
+                    'color': 'white',
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
