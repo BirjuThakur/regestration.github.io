@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+     <!--aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    {{>header}}
+    <div class="container" id="service">
+    <div class="row pb-5 g-4">
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4" data-aos="fade-up-right">
+            <div class="card">
+                <img src="images/download/product1.jpg" class="card-img-top" alt="service">
+                <div class="card-body">
+                    <h5 class="card-title">The Perfect T-Shirt</h5>
+                    <p class="card-text">Customisable length. Designed to last: crafted from extra-long staple cotton.
+                        Exceptional quality. Handmade in india.</p>
+                    <a href="shopping" class="btn btn-primary">buy now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4" data-aos="fade-down">
+            <div class="card">
+                <img src="images/download/product2.jpg" class="card-img-top" alt="service">
+                <div class="card-body">
+                    <h5 class="card-title">The Heavyweight T-Shirt</h5>
+                    <p class="card-text">The 235 GSM jersey fabric is crafted in Portugal from 100% organic cotton. Our
+                        custom-developed jersey fabric features.</p>
+                    <a href="shopping" class="btn btn-primary">buy now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4" data-aos="fade-up">
+            <div class="card">
+                <img src="images/download/product3.jpg" class="card-img-top" alt="service">
+                <div class="card-body">
+                    <h5 class="card-title">The Perfect Shirt</h5>
+                    <p class="card-text">Handmade in Europe. A custom-developed basket weave ensures superior levels of
+                        flexibility and breathability. </p>
+                    <a href="shopping" class="btn btn-primary">buy now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row pb-5 g-4">
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4" data-aos="flip-left">
+            <div class="card">
+                <img src="images/download/product4.0.jpg" class="card-img-top" alt="service">
+                <div class="card-body">
+                    <h5 class="card-title">The Boyfriend T-Shirt</h5>
+                    <p class="card-text">Unisex fit: perfect for a relaxed boyfriend look. Crafted from 100% premium ELS
+                        cotton.</p>
+                    <a href="shopping" class="btn btn-primary">buy now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4" data-aos="flip-right">
+            <div class="card">
+                <img src="images/download/product_5.jpg" class="card-img-top" alt="service">
+                <div class="card-body">
+                    <h5 class="card-title">The Oversized Shirt</h5>
+                    <p class="card-text"> The unisex shirt has been tailored for an oversized boyfriend look.The
+                        Oversized shirt is handmade in india </p>
+                    <a href="shopping" class="btn btn-primary">buy now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4" data-aos="zoom-in-up">
+            <div class="card">
+                <img src="images/download/product_6.jpg" class="card-img-top" alt="service">
+                <div class="card-body">
+                    <h5 class="card-title">The Unisex Longsleeve T-Shirt</h5>
+                    <p class="card-text">The unisex longsleeve T-Shirt is handmade in india from 100% 
+                        organic cotton.Remarkably soft to body of humans and nature.</p>
+                    <a href="shopping" class="btn btn-primary">buy now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    {{>footer}}
+    <script src="../js/bootstrap.bundle.js"></script>
+     <!--aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration:1000,
+            offset:300,
+        });
+    </script>
+</body>
+</html>
